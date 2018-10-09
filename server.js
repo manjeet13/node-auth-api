@@ -30,6 +30,7 @@ require("./config/passport")(passport);
 //use body parser to handle data(json/multipart)
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+app.set("view engine", "ejs");
 
 // required for passport
 app.use(session({

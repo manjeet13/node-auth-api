@@ -31,7 +31,7 @@ router.get('/forgot', (req, res)=> {
 router.post('/forgot', passport.authenticate('local-forgot', {
     successRedirect : '/success',
     failureRedirect : '/failed'
-})
+}));
 
 
 //test routes for verifying login/signup
